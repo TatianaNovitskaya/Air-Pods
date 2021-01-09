@@ -1,0 +1,151 @@
+.product {
+	padding: 3.8rem 0
+	background: #C6A6CD;
+	box-shadow: 0px 0px 10px rgba(78, 25, 88, 0.8);
+	position: relative
+	z-index: 5
+}
+
+.product__wrap {
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+}
+
+.product__column-left {
+	width: 50%
+	padding-left: 1.9rem
+}
+
+.product__txt {
+	margin-top: 2.05rem
+	
+	p {
+		font-weight: 500;
+		font-size: rem(18);
+		line-height: rem(22);
+		color: #3D1146;
+	}
+}
+
+.phone-set {
+	margin-top: 1.4rem
+	
+	p {
+		font-weight: 500;
+		font-size: rem(18);
+		line-height: rem(22);
+		color: #3D1146;
+	}
+}
+
+.phone-set-list {
+	margin: 0.7rem 0 0 1.2rem;
+	
+	span {
+		font-weight: 500;
+		font-size: rem(18);
+		line-height: rem(30);
+		color: #3D1146;
+	}
+}
+
+.product__column-right {
+	width: 50%
+}
+
+.product__img {
+	position: relative
+	width: rem(393)
+	margin: 1rem 0 0 5.7rem;
+	
+	img {
+		position: relative
+		z-index: 5
+	}
+	
+	&:before {
+		content ""
+		display: block;
+		position: absolute;
+		width: rem(500);
+		height: rem(500);
+		background: #ECCEF2;
+		border-radius: 50%
+		opacity: 0.5;
+		box-shadow: 0px 0px 10px rgba(78, 25, 88, 0.3);
+		top: 50%
+		left: 50%
+		transform translate(-54%, -52%)
+	}
+}
+
+.product__price {
+	display: flex
+	align-items: baseline
+	margin-top: 2.5rem
+	
+	.old-price {
+		color: #ECCEF2;
+	}
+}
+
+.product__column-all {
+	width: 100%
+}
+
+.product__gallery {
+	width: 100%
+	padding: 0 2.5rem
+	margin-top: 2.8rem
+	display: flex
+	justify-content: space-between
+	
+	.gallery__item {
+		box-shadow: 0px 0px 10px rgba(78, 25, 88, 0.3);
+	}
+}
+
+.product__form {
+	margin-top: 2.55rem
+	padding: 0 1rem
+}
+	.order-form{
+		display: flex
+		align-items: center
+		input{
+			width: rem(280);
+			padding: 1.3rem 1.8rem 0.6rem;
+			background: #ECCEF2;
+			border: 1px solid #C6A6CD;
+			box-sizing: border-box;
+			border-radius: rem(50);
+			margin-right: 0.6rem
+			font-style: normal;
+			font-weight: 500;
+			font-family: 'Montserrat',sans-serif;
+			font-size: rem(18);
+			line-height: rem(22)
+			color: #3D1146;
+			&::placeholder{
+				font-style: normal;
+				font-weight: 500;
+				font-family: 'Montserrat',sans-serif;
+				font-size: rem(18);
+				line-height: rem(22)
+				color: #B295B8;
+			}
+		}
+		button{
+			border: none
+			width: rem(280);
+			padding: 1rem 3rem
+			font-family: 'Montserrat',sans-serif;
+			font-size: rem(20);
+			line-height: rem(24)
+			letter-spacing 2px
+			text-transform: uppercase;
+			font-weight: 600;
+			margin: 0 1.3rem 0 1.8rem;
+		}
+	}

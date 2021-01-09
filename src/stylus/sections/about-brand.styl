@@ -1,0 +1,48 @@
+.about-brand {
+	background: #C6A6CD;
+	box-shadow: 0px 0px 10px rgba(78, 25, 88, 0.8);
+	padding: 4.1rem 0 0
+	position: relative
+	z-index: 5
+	.wrapper{
+		&:before{
+		  content ""
+		  display: block;
+		  position:absolute;
+			background: url("../images/airpods-2.png") no-repeat
+			-webkit-background-size: cover
+			background-size: cover
+			width: rem(699)
+			height: rem(420)
+			top: -1.8rem;
+			left: -25.5rem;
+		}
+	}
+}
+
+.about-brand__wrap {
+	display: flex
+}
+
+.about-brand__column-left {
+	width: 58%
+	padding-left: 8.5rem
+}
+
+.about-brand__txt {
+	margin-top rem(20)
+	p {
+		font-weight: 500;
+		font-size: rem(18);
+		line-height: rem(22);
+		color: #3D1146;
+		margin-bottom: 1.4rem
+	}
+}
+	.about-brand__column-right{
+		width: 42%
+	}
+		.about-brand__img{
+			width: rem(673)
+			margin: -4.1rem 0 0 -6rem;
+		}

@@ -1,0 +1,213 @@
+.popup {
+	position: fixed
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	z-index: 50
+	opacity: 0
+	transition opacity 300ms ease-in-out
+	display: flex
+	justify-content: center
+	align-items: center
+	visibility: hidden
+	//transform translate(0, -100%)
+	&.popup_show {
+		opacity: 1
+		visibility: visible
+		transform translate(0, 0)
+		.popup__close {
+			transform scale(1)
+		}
+		.popup__content {
+			transform translate(0, 0)
+		}
+	}
+}
+
+.popup__close {
+	position: absolute
+	top: 0
+	bottom: 0
+	right: 0
+	left: 0
+	background rgba(#000, 0.7)
+	transform scale(0)
+	transition opacity 300ms ease-in-out, transform 300ms ease-in-out
+}
+
+.popup__content {
+	position: relative
+	z-index: 5
+	transition opacity 300ms ease-in-out, transform 300ms ease-in-out
+	transform translate(0, -100%)
+}
+
+.popup__btn {
+	position: absolute
+	top: 1em
+	right: 1em
+	height: 1.3em
+	width: 1.3em
+	cursor: pointer
+	transition transform 500ms ease
+	&:hover {
+		transform rotate(180deg)
+	}
+}
+
+
+//////   ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ ///////////
+.popup__policy {
+	.popup__content {
+		max-width: 35em
+		background-color: #fff
+		padding 1.5em 2em
+		text-align: center
+		h3 {
+			font-size: 1.4em
+			color: #4d83c0
+			font-weight: 700
+			text-transform: uppercase
+			margin-bottom: 1rem
+		}
+		p {
+			font-size: 0.875em
+			margin: 0.85rem 0
+			text-align justify
+		}
+	}
+}
+.icon-svg {
+	width: 100%
+	height: 100%
+}
+
+	
+	/////        ОСТАВЬТЕ СВОЙ ОТЗЫВ    /////////
+.popup__add-review {
+	.form-group {
+		position: relative
+	}
+	.popup__content {
+		width: 30.563rem;
+		background-color: #C6A6CD;
+		border-radius: 5px;
+		padding: 0.75rem 1.88rem 1.88rem;
+	}
+	.btn {
+		box-shadow none
+		text-transform: none
+	}
+	.icon-svg{
+		fill #3d1146
+	}
+}
+
+.popup__add-review-title {
+	text-align: center
+	h3 {
+		color: #3d1146;
+		font-size: 1.875rem;
+		font-weight: 600;
+	}
+}
+
+.popup__add-review-form {
+	margin-top: rem(35)
+	.review-form {
+		width: 100%
+	}
+	.form-group{
+		&:nth-child(3){
+			display: flex
+			justify-content: center
+			align-items: center
+		}
+	}
+	input {
+		width: rem(300);
+		padding: 1.3rem 1.8rem 0.6rem;
+		background: #ECCEF2;
+		border: 1px solid #C6A6CD;
+		box-sizing: border-box;
+		border-radius: rem(50);
+		margin-right: 0.6rem
+		font-style: normal;
+		font-weight: 500;
+		font-family: 'Montserrat',sans-serif;
+		font-size: rem(18);
+		line-height: rem(22)
+		color: #3D1146;
+		&::placeholder{
+			font-style: normal;
+			font-weight: 500;
+			font-family: 'Montserrat',sans-serif;
+			font-size: rem(18);
+			line-height: rem(22)
+			color: #B295B8;
+		}
+	}
+	textarea {
+		width: 100%
+		height: 11.75rem;
+		background: #ECCEF2;
+		border: 1px solid #C6A6CD;
+		border-radius: 5px;
+		resize none
+		margin-top: rem(20)
+		padding: rem(18) rem(27)
+		font-style: normal;
+		font-weight: 500;
+		font-family: 'Montserrat',sans-serif;
+		font-size: rem(18);
+		line-height: rem(22)
+		color: #3D1146;
+		overflow : hidden;
+		&::placeholder{
+			font-style: normal;
+			font-weight: 500;
+			font-family: 'Montserrat',sans-serif;
+			font-size: rem(18);
+			line-height: rem(22)
+			color: #B295B8;
+		}
+	}
+	button {
+		width: 18.75rem;
+		height: 3.125rem;
+		border none
+		margin: 1.5rem auto 0
+	}
+}
+	
+	///////   спасибо  ////////
+.popup__thanks {
+	.popup__content {
+		width: 100%
+		max-width: 32rem;
+		background-color: #BC8FBE;
+		border-radius: 5px;
+		padding: rem(60) rem(30)
+	}
+}
+
+.popup__thanks {
+	text-align: center
+	p {
+		color: #fff;
+		font-size: 1.5rem;
+	}
+	img{
+		width: 3.75rem;
+		height: 3.75rem;
+	}
+}
+
+.error-text {
+	position: absolute
+	left: rem(32)
+	color: red
+	bottom: -1rem;
+	font-size: rem(12)
+}

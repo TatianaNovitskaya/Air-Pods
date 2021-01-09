@@ -1,0 +1,51 @@
+<footer class="footer">
+    <div class="wrapper"></div>
+</footer>
+
+
+<div class="popup popup__add-review">
+    <div class="popup__content">
+        <div class="popup__btn js__close-popup">
+            <svg class="icon-svg">
+                <use xlink:href="images/svg-sprite/svg.svg#close"></use>
+            </svg>
+        </div>
+        <div class="popup__add-review-title">
+            <h3>Оставьте отзыв</h3>
+        </div>
+        <div class="popup__add-review-form">
+            <form class="popup__review-form " id="myform">
+                <div class="form-group">
+                    <label for="name_first" class="control-label"></label>
+                    <input type="text" class="form-control" name="name_first" id="name_first" placeholder="Имя" required>
+                    <span class="error-text"></span></div>
+                <div class="form-group">
+                    <label for="text-review" class="control-label"></label>
+                    <textarea id="text-review" name="comments" placeholder="Напишите ваш отзыв" required></textarea>
+                    <span class="error-text"></span></div>
+                <div class="form-group">
+                    <button class="btn btn_orange" type="submit" name="submit"><span>Отправить отзыв</span></button>
+                </div>
+            </form>
+
+
+
+        </div>
+    </div>
+    <div class="popup__close js__close-popup"></div>
+</div>
+<div class="popup popup__thanks">
+    <div class="popup__content">
+        <div class="popup__btn js__close-popup">
+            <svg class="icon-svg">
+                <use xlink:href="images/svg-sprite/svg.svg#close"></use>
+            </svg>
+        </div>
+        <div class="popup__thanks">
+            <img src="images/smile.png" alt="">
+            <p>Спасибо за ваш отзыв, он появится<br>
+                на сайте после проверки модератором.</p>
+        </div>
+    </div>
+    <div class="popup__close js__close-popup"></div>
+</div>
